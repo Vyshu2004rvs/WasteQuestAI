@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WASTE ITEMS CLASSIFICATION</title>
+  <link rel="icon" type="image/png" sizes="128x128" href="images/favicon.png">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">Waste Items Classification Using CNN</div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1 id="heading">Drag and Drop or Upload an Image</h1>
+
+    <!-- Drop Area -->
+    <div id="drop-area" class="drop-area">
+      <p id="dragText">Drag & Drop or Click to Select</p>
+      <img src="upload-icon.png" alt="Upload Icon" id="upload-icon" />
+    </div>
+
+    <!-- Hidden File Input -->
+    <input type="file" id="fileInput" accept="image/*" style="display: none;" />
+
+    <!-- Preview of Selected Image -->
+    <img id="preview" class="preview-image" alt="Preview" />
+
+    <!-- Buttons -->
+    <div class="button-row">
+      <button id="uploadBtn">Upload Image</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result"></div>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="script1.js"></script>
+</body>
+</html>

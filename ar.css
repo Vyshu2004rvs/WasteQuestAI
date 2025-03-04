@@ -1,0 +1,6 @@
+body {
+    background-image: url('images/Screenshot\ 2025-03-02\ 003356.png'); /* Path to your image file */
+    background-size:contain;       /* Makes sure the image covers the entire background */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }

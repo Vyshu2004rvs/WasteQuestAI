@@ -1,0 +1,43 @@
+/* Waste Wizard Custom Styles */
+
+/* Player Styles */
+.player-color {
+    background-color: #4CAF50; /* Green for correct sorting */
+  }
+  
+  .player-area {
+    background-color: #1B5E20;
+    background-image: url(images/chip.svg);
+  }
+  
+  .player-card .power {
+    background-image: url(images/recycle.png);
+  }
+  
+  /* Waste Styles */
+  .waste-color {
+    background-color: #FF9800; /* Orange for waste items */
+  }
+  
+  .waste-area {
+    background-color: #795548;
+    background-image: url(images/chip.svg);
+  }
+  
+  .waste-card .power {
+    background-image: url(images/trash.png);
+  }
+  
+  /* Bin Styles */
+  .biodegradable {
+    background-color: #8BC34A; /* Light Green for biodegradable */
+  }
+  
+  .recyclable {
+    background-color: #2196F3; /* Blue for recyclable waste */
+  }
+  
+  .non-recyclable {
+    background-color: #F44336; /* Red for non-recyclable waste */
+  }
+  

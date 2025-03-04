@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Segregation</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        .fun-facts {
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            background: #dac8aafc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .fun-facts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .fun-facts ul li {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 5px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background: #444;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            padding: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        #game-container {
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #waste-items {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .draggable {
+            width: 100px;
+            height: 100px;
+            cursor: grab;
+        }
+        #bins {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .bin {
+            width: 120px;
+            height: 150px;
+            background: #ddd;
+            border: 2px dashed #666;
+            text-align: center;
+            padding-top: 50px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Waste Segregation Game</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">🏠 HOME</a></li>
+            <li><a href="game.html">🎮 GAME</a></li>
+            <li><a href="CNN.html">🤖 CNN Model Prediction</a></li>
+            <li><a href="ar-app.html">🕶️ AR APPLICATION</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <br>
+        <div class="image-gallery">
+            <img src="images/im.jpg" alt="Waste Awareness" class="fixed-size">
+            <img src="images/imag.png" alt="Recycling Process" class="fixed-size">
+            <img src="images/pic2.jpg" alt="Sustainable Living" class="fixed-size">
+        </div>
+    </section>
+    <section id="waste-guide">
+        <h2>♻️ Waste Segregation Guide</h2>
+        <center>
+        <table border="1">
+            <tr>
+                <th>Waste Type</th>
+                <th>Which Bin?</th>
+            </tr>
+            <tr>
+                <td>🍌 Food Scraps</td>
+                <td>🌱 Organic Waste Bin</td>
+            </tr>
+            <tr>
+                <td>📄 Paper & Cardboard</td>
+                <td>♻️ Recyclable Bin</td>
+            </tr>
+            <tr>
+                <td>🔋 Batteries & Chemicals</td>
+                <td>☣️ Hazardous Waste Bin</td>
+            </tr>
+        </table>
+    </center>
+    </section>
+    <section id="live-counter">
+        <h2>🌎 Live Waste Recycling Counter</h2>
+        <p>Amount of waste recycled this year:</p>
+        <h3 id="waste-counter">10,000,000 kg</h3>
+    </section>
+    
+    <script>
+        let counter = 10000000;
+        setInterval(() => {
+            counter += Math.floor(Math.random() * 50);  // Simulating live data
+            document.getElementById("waste-counter").innerText = counter.toLocaleString() + " kg";
+        }, 2000);
+    </script>
+    <section class="fun-facts">
+        <h2>Fun Facts About Waste and Recycling</h2>
+        <ul>
+            <li>♻️ Recycling one aluminum can saves enough energy to run a TV for three hours!</li>
+            <li>🌍 The world generates over 2 billion tons of waste every year.</li>
+            <li>🛍️ Plastic bags take up to 1,000 years to decompose in landfills.</li>
+            <li>💧 Recycling one ton of paper saves about 7,000 gallons of water.</li>
+            <li>⚡ Producing recycled paper uses 70% less energy compared to new paper.</li>
+        </ul>
+    </section>
+    <section id="resources">
+        <h2>🔗 Useful Waste Management Websites and Videos</h2>
+            <div class="buttons-container">
+                <a href="https://www.epa.gov/recycle" target="_blank" class="resource-button">♻️ EPA - Recycling Guide</a>
+                <a href="https://www.recyclenow.com" target="_blank" class="resource-button">Recycle Now</a>
+                <a href="https://www.coursera.org/courses?query=sustainability" target="_blank" class="resource-button">Sustainability Courses</a>
+            <a href="https://www.youtube.com/results?search_query=waste+management+documentary" target="_blank" class="resource-button">Waste Management Documentaries</a>
+            </div>
+            <style>
+                .resource-button {
+                    display: inline-block;
+                    background: #28a745;
+                    color: white;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    margin: 5px;
+                    transition: background 0.3s ease;
+                }
+            
+                .resource-button:hover {
+                    background: #218838;
+                }
+            </style>
+    </section>
+    <section id="daily-challenge">
+        <h2>🔥 Eco Challenge of the Day</h2>
+        <p id="challenge-text">Click below for today's challenge!</p>
+        <button onclick="generateChallenge()">🎲 Get Challenge</button>
+    </section>
+    
+    <script>
+        let challenges = [
+            "🚯 Avoid single-use plastics today!",
+            "♻️ Recycle 5 plastic bottles.",
+            "🌿 Use a reusable bag for shopping.",
+            "🌍 Reduce food waste by finishing your meals."
+        ];
+    
+        function generateChallenge() {
+            let randomChallenge = challenges[Math.floor(Math.random() * challenges.length)];
+            document.getElementById("challenge-text").innerText = randomChallenge;
+        }
+    </script>
+    <section id="success-stories">
+        <h2>🌱 Your Waste Segregation Stories</h2>
+        <textarea id="story" placeholder="Share your experience..."></textarea>
+        <button onclick="postStory()">📢 Share</button>
+        <div id="story-list"></div>
+    </section>
+    
+    <script>
+        function postStory() {
+            let storyText = document.getElementById("story").value;
+            let storyList = document.getElementById("story-list");
+            if (storyText.trim() !== "") {
+                let newStory = document.createElement("p");
+                newStory.innerText = "📝 " + storyText;
+                storyList.appendChild(newStory);
+                document.getElementById("story").value = ""; // Clear input field
+            }
+        }
+    </script>
+    
+    <footer>
+        <p> Waste Awareness</p>
+    </footer>
+</body>
+</html>

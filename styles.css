@@ -1,0 +1,40 @@
+/* ===== Global Styles ===== */
+
+  body {
+    background-image: url('images/images.jpg'); /* Path to your image file */
+    background-size:cover;       /* Makes sure the image covers the entire background */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
+  /* Header */
+  .header {
+    background-color: #5e5e5ebb;
+    color: #fff;
+    padding: 25px;
+    font-size: 24px;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 500px;
+    max-height:fit-content;
+    margin: 40px auto;
+    background: #ffffff9b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.361);
+    padding: 10px;
+  }
+  
+  h1 {
+    margin: 0 0 20px;
+    color: #333;
+  }
+  
+  
+  
+  .fixed-size {
+    width: 1000px;
+    height: 800px;
+    object-fit: contain; /* Keeps the full image visible inside the box */
+}

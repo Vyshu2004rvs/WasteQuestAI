@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Waste Wizard</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="customize.css" type="text/css">
+    <script src="cards.js" type="text/javascript"></script>
+</head>
+
+  <body>
+    <div class="game-board">
+
+      <div class="waste-area">
+
+        <h1>
+          <strong>Waste Item</strong> <br/> Sort the waste into the correct bin!</h1>
+
+        <div class="stats waste-stats">
+          <div class="life-bar">
+            <div class="life-left waste-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <!-- Change the name and emoji here -->
+          <div class="thumbnail">🗑️</div>
+          <div class="name">Waste Item</div>
+        </div>
+        
+        <div class="card waste-card waste-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+      </div>
+
+      <div class="player-area">
+
+        <div class="stats player-stats">
+          <div class="life-bar">
+            <div class="life-left player-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <!-- Change the name and emoji here -->
+          <div class="thumbnail">😎</div>
+          <div class="name">You</div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <button class="start-game" onClick="startGame()">Play the Game!</button>
+        <button class="next-turn" onClick="playTurn()">Next!</button>
+      </div>
+    </div>
+
+
+
+    <div class="winner-section">
+      <div>
+        <span class="winner-message">Sorting Complete!</span>
+        <button class="restart" onClick="location.reload()">Play Again</button>
+      </div>
+    </div>
+
+    <script src="scripts/script.js" type="text/javascript"></script>
+
+  </body>
+</html>
